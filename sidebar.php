@@ -61,19 +61,24 @@
           <span>Laporan</span></a>
       </li>
 
-     <hr class="sidebar-divider">
-
-      <!-- Heading -->
-      <div class="sidebar-heading">
-        Kelola
-      </div>
-      
-      <!-- Nav Item - Tables -->
-      <li class="nav-item">
-        <a class="nav-link" href="akun.php">
-          <i class="fas fa-fw fa-user"></i>
-          <span>Akun</span></a>
-      </li>
+       <?php
+            if ($_SESSION['type'] == 'Admin') {
+	           echo'
+               <hr class="sidebar-divider">
+               <!-- Heading -->
+               <div class="sidebar-heading">
+               Kelola
+               </div>          
+               <!-- Nav Item - Tables -->
+               <li class="nav-item">
+               <a class="nav-link" href="akun.php">
+               <i class="fas fa-fw fa-user"></i>
+               <span>Akun</span></a>
+               </li>';
+            } else {
+	           
+            };
+        ?>
 
       <!-- Divider -->
       <hr class="sidebar-divider d-none d-md-block">
