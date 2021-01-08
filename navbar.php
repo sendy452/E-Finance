@@ -7,7 +7,6 @@
           </button>
 
           <!-- Topbar Search -->
-		<h1><i>Welcome!</i></h1>
 
 <?php require 'user.php'; ?>
 

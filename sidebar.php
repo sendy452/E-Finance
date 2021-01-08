@@ -70,7 +70,7 @@
       
       <!-- Nav Item - Tables -->
       <li class="nav-item">
-        <a class="nav-link" href="laporan.php">
+        <a class="nav-link" href="akun.php">
           <i class="fas fa-fw fa-user"></i>
           <span>Akun</span></a>
       </li>
