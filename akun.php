@@ -88,7 +88,7 @@ while ($data = mysqli_fetch_assoc($query))
 					  <td>
                     <!-- Button untuk modal -->
 <a href="#" type="button" class=" fa fa-edit btn btn-primary btn-md" data-toggle="modal" data-target="#myModal<?php echo $data['id_user']; ?>"></a>
-<a href="proses_hapus.php?id=<?php echo $d['id_user']; ?>" type="button" class="btn btn-danger btn-md" data-toggle="modal"><i class="fa fa-trash"></i></a>
+<a href="proses_hapus.php?id=<?php echo $data['id_user']; ?>" class="btn btn-danger btn-md"><i class="fa fa-trash"></i></a>
 </td>
 </tr>
 <!-- Modal Edit Mahasiswa-->

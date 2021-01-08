@@ -3,16 +3,17 @@
 include('koneksi.php');
 
 $nama = $_GET['nama'];
-$email = $_GET['email'];
+$username = $_GET['username'];
 $pass = $_GET['pass'];
+$type = $_GET['type'];
 
 
 //query update
-$query = mysqli_query($koneksi,"INSERT INTO `admin` (`nama`, `email`, `pass`) VALUES ('$nama', '$email', '$pass')");
+$query = mysqli_query($koneksi,"INSERT INTO `user` (`nama`, `username`, `pass`, `type`) VALUES ('$nama', '$username', '$pass', '$type')");
 
 if ($query) {
  # credirect ke page index
- header("location:profile.php"); 
+ header("location:akun.php"); 
 }
 else{
  echo "ERROR, data gagal diupdate". mysqli_error($koneksi);
